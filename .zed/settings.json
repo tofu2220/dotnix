@@ -17,18 +17,4 @@
       "enable_language_server": false,
     },
   },
-
-  "lsp": {
-    "nil": {
-      "settings": {
-        "nil": {
-          "nix": {
-            "flake": {
-              "autoArchive": false,
-            },
-          },
-        },
-      },
-    },
-  },
 }
