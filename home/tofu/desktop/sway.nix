@@ -19,12 +19,12 @@
   ];
 
   xdg.configFile = {
-    "sway/config".source = ../../config/sway/config;
-    "sway/config.d".source = ../../config/sway/config.d;
-    "satty".source = ../../config/satty;
-    "mako".source = ../../config/mako;
-    "fuzzel".source = ../../config/fuzzel;
     "foot".source = ../../config/foot;
+    "fuzzel".source = ../../config/fuzzel;
     "i3status-rust".source = ../../config/i3status-rust;
+    "mako".source = ../../config/mako;
+    "satty".source = ../../config/satty;
+    "sway/config.d".source = ../../config/sway/config.d;
+    "sway/config".source = ../../config/sway/config;
   };
 }
