@@ -2,17 +2,22 @@
 
 {
   home.packages = with pkgs; [
+    # Nix language tooling.
     nil
     nixfmt
 
+    # C/C++ language tooling (includes clangd).
     clang-tools
 
+    # Search and data tools.
     ripgrep
-    microfetch
-    htop
     jq
 
-    # May delete later when I run out of money
+    # System information and monitoring.
+    microfetch
+    htop
+
+    # AI coding assistant.
     unstable.codex
   ];
 }
