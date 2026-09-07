@@ -2,7 +2,7 @@
   imports = [
     ./appearance.nix
     ./apps.nix
-    ./input-method.nix
+    ./fcitx5.nix
     ./sway.nix
     ./thunar.nix
     ./zed.nix
