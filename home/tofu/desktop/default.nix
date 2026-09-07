@@ -3,6 +3,7 @@
     ./appearance.nix
     ./apps.nix
     ./fcitx5.nix
+    ./mpv.nix
     ./sway.nix
     ./thunar.nix
     ./zed.nix
