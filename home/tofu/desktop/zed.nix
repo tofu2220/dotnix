@@ -1,12 +1,30 @@
-{ lib, ... }:
+{ pkgs, ... }:
 
 {
-  home.activation.seedZedSettings = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
-    zed_settings="$HOME/.config/zed/settings.json"
+  programs.zed-editor = {
+    enable = true;
+    package = pkgs.unstable.zed-editor;
 
-    if [ ! -e "$zed_settings" ] && [ ! -L "$zed_settings" ]; then
-      $DRY_RUN_CMD mkdir -p "$HOME/.config/zed"
-      $DRY_RUN_CMD cp ${../../config/zed/settings.json} "$zed_settings"
-    fi
-  '';
+    mutableUserSettings = true;
+
+    userSettings = {
+      theme = "One Light";
+      base_keymap = "VSCode";
+      show_edit_predictions = false;
+
+      ui_font_family = "DejaVu Sans";
+      buffer_font_family = "Hack Nerd Font Mono";
+      agent_buffer_font_family = "DejaVu Sans";
+
+      terminal = {
+        font_family = "Hack Nerd Font";
+      };
+
+      telemetry = {
+        diagnostics = false;
+        metrics = false;
+        anthropic_retention = false;
+      };
+    };
+  };
 }
