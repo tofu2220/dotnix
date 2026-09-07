@@ -3,11 +3,8 @@
 {
   home.packages = with pkgs; [
     # Nix language tooling.
-    nil
+    nixd
     nixfmt
-
-    # C/C++ language tooling (includes clangd).
-    clang-tools
 
     # Search and data tools.
     ripgrep
