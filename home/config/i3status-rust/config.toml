@@ -30,7 +30,7 @@ format = " $text.pango-str() "
 [[block]]
 block = "net"
 interval = 2
-format = " $icon $signal_strength "
+format = " $icon {$signal_strength $ssid|Wired} via $device "
 inactive_format = " $icon Offline "
 
 [[block]]
