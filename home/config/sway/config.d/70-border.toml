@@ -5,7 +5,7 @@ default_border pixel 2
 client.focused   #3c84f7 #3c84f7 #ffffff #3c84f7 #3c84f7
 
 # Unfocused: subtle Colloid Light neutral
-client.unfocused #e0e0e0 #e0e0e0 #666666 #e0e0e0 #e0e0e0
+client.unfocused #ffffff #ffffff #666666 #e0e0e0 #e0e0e0
 
 # Floating dialogs: retain title bars for dragging
 default_floating_border normal
