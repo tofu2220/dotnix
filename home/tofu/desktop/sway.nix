@@ -6,7 +6,7 @@
     pamixer
     i3status-rust
     nwg-displays
-    autotiling
+    autotiling-rs
 
     # Image viewer
     unstable.swayimg

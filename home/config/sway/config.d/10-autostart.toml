@@ -15,7 +15,7 @@ exec swaymsg -t subscribe '["shutdown"]' && \
     systemctl --user stop sway-session.target
 
 # Start autotiling
-exec autotiling
+exec autotiling-rs
 
 # System notification daemon
 exec mako
