@@ -5,7 +5,6 @@
     ./fcitx5.nix
     ./mpv.nix
     ./sway.nix
-    ./swayimg.nix
     ./thunar.nix
     ./zed.nix
 

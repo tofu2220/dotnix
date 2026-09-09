@@ -8,6 +8,9 @@
     nwg-displays
     autotiling
 
+    # Image viewer
+    unstable.swayimg
+
     # Screenshot
     satty
     slurp
@@ -24,6 +27,7 @@
     "i3status-rust".source = ../../config/i3status-rust;
     "mako".source = ../../config/mako;
     "satty".source = ../../config/satty;
+    "swayimg".source = ../../config/swayimg;
     "sway/config.d".source = ../../config/sway/config.d;
     "sway/config".source = ../../config/sway/config;
   };
