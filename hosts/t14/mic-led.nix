@@ -1,12 +1,20 @@
 { pkgs, ... }:
 
-# This is just workaround, will find real fix later
-
+# Temporary workaround for an ALSA/UCM initialization-order issue on the
+# ThinkPad T14.
+#
+# The HDA card may become available before the ACP digital-mic card is ready.
+# Running the UCM FixedBootSequence only after both cards are visible restores
+# the expected audio state.
+#
+# Keep this local until the underlying NixOS/ALSA/kernel issue no longer
+# requires the workaround. The polling window is intentionally short and only
+# serves as a guard against device-probe timing differences during boot.
 let
   ucmFboot = pkgs.writeShellScript "t14-ucm-fboot" ''
     set -eu
 
-    # Chờ cả HDA card và ACP digital-mic card xuất hiện.
+    # Wait for both the HDA card and the ACP digital-mic card to appear.
     for _ in $(seq 1 20); do
       if grep -q 'Generic_1' /proc/asound/cards \
         && grep -q 'acp6x' /proc/asound/cards; then
