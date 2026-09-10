@@ -3,8 +3,15 @@
 {
   programs.helix = {
     enable = true;
+
     settings = {
-      theme = "catppuccin_latte";
+      theme = "tokyonight";
+
+      editor.cursor-shape = {
+        normal = "block"; # khối
+        insert = "bar"; # vạch dọc
+        select = "underline"; # gạch dưới
+      };
     };
   };
 }
