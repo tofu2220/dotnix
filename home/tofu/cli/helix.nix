@@ -5,12 +5,12 @@
     enable = true;
 
     settings = {
-      theme = "tokyonight";
+      theme = "base16_default";
 
       editor.cursor-shape = {
-        normal = "block"; # khối
-        insert = "bar"; # vạch dọc
-        select = "underline"; # gạch dưới
+        normal = "block";
+        insert = "bar";
+        select = "underline";
       };
     };
   };
