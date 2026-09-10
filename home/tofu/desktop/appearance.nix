@@ -24,13 +24,6 @@
     };
   };
 
-  fonts.fontconfig = {
-    enable = true;
-
-    defaultFonts = {
-      monospace = [ "Hack Nerd Font Mono" ];
-    };
-  };
-
+  fonts.fontconfig.enable = true;
   home.packages = [ pkgs.nerd-fonts.hack ];
 }
