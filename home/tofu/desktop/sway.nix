@@ -5,7 +5,7 @@
     fuzzel
     pamixer
     i3status-rust
-    nwg-displays # For presentation with many external monitor
+    nwg-displays # For presentation with many external monitor, not considered superfluous
     autotiling-rs
 
     # Image viewer
