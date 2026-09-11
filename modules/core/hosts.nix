@@ -1,5 +1,5 @@
 {
-  # This is temporary until I can dev something overcome this shit
+  # Workaround
   networking.hosts = {
     "96.17.96.6" = [ "api.steampowered.com" ];
     "96.17.96.23" = [ "api.steampowered.com" ];
