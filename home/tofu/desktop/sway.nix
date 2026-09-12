@@ -6,7 +6,7 @@
     pamixer
     i3status-rust
     nwg-displays # For presentation with many external monitor, not considered superfluous
-    autotiling-rs
+    autotiling
 
     # Image viewer
     unstable.swayimg

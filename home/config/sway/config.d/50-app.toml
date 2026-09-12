@@ -36,3 +36,6 @@ for_window [app_id="org.xfce.mousepad"] floating enable, border normal
 
 # Keep Swayimg in floating mode
 for_window [app_id="swayimg"] floating enable, border normal
+
+# Keep Duckstation inhibit idle
+for_window [app_id="org.duckstation.DuckStation"] inhibit_idle open
