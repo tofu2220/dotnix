@@ -39,3 +39,6 @@ for_window [app_id="swayimg"] floating enable, border normal
 
 # Keep Duckstation inhibit idle
 for_window [app_id="org.duckstation.DuckStation"] inhibit_idle open
+
+# Keep Zed inhibit idle
+for_window [app_id="dev.zed.Zed"] inhibit_idle open
