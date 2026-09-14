@@ -12,4 +12,6 @@ input type:touchpad {
 # Keyboard configuration
 input type:keyboard {
     xkb_numlock enabled
+    xkb_layout us
+    xkb_variant intl
 }
