@@ -7,6 +7,4 @@
   ];
 
   networking.hostName = "nixos-dell";
-
-  environment.systemPackages = [ pkgs.librewolf ];
 }
