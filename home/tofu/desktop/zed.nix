@@ -12,6 +12,8 @@
       base_keymap = "VSCode";
       show_edit_predictions = false;
 
+      agent_ui_font_family = "DejaVu Sans";
+
       terminal = {
         font_family = "Hack Nerd Font";
       };
