@@ -1,13 +1,13 @@
 { ... }:
 
 {
-  # SSH client: gửi khả năng true-color của terminal hiện tại.
+  # SSH client: send the current terminal's true-color capability.
   programs.ssh.extraConfig = ''
     Host *
       SendEnv COLORTERM
   '';
 
-  # SSH server: chấp nhận biến đó trong phiên SSH.
+  # SSH server: accept this variable in SSH sessions.
   services.openssh = {
     enable = true;
     openFirewall = true;
