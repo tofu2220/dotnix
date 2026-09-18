@@ -4,6 +4,7 @@
   imports = [
     ../modules/core
     ../modules/desktop
+    ../modules/gaming
     ../modules/services
     ../profiles/tofu.nix
   ];
