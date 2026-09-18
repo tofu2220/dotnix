@@ -1,4 +1,4 @@
-# modules/services/appimage.nix
+# For game emulators like duckstation
 { ... }:
 {
   programs.appimage = {
