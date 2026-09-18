@@ -4,7 +4,7 @@ bar {
     font pango: Hack Nerd Font 11
     position top
     workspace_buttons yes
-    tray_output none
+    tray_output *
     status_command i3status-rs ~/.config/i3status-rust/config.toml
 
     colors {
