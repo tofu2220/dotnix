@@ -59,6 +59,7 @@
 
       Permissions = {
         Location.BlockNewRequests = true;
+        Autoplay.Default = "block-audio-video";
         # Notifications.BlockNewRequests = true; # Maybe someday I will reconsider this
       };
 
