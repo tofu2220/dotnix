@@ -16,5 +16,8 @@
     "JSONC": {
       "enable_language_server": false,
     },
+    "Lua": {
+      "enable_language_server": false,
+    },
   },
 }
