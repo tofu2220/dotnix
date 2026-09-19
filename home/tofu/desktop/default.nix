@@ -2,7 +2,9 @@
   imports = [
     ./appearance.nix
     ./apps.nix
+    ./brave.nix
     ./fcitx5.nix
+    ./mousepad.nix
     ./mpv.nix
     ./sway.nix
     ./thunar.nix
