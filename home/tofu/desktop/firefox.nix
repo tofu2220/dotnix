@@ -59,7 +59,7 @@
 
       Permissions = {
         Location.BlockNewRequests = true;
-        # Notifications.BlockNewRequests = true;
+        # Notifications.BlockNewRequests = true; # Maybe someday I will reconsider this
       };
 
       DisableTelemetry = true;
