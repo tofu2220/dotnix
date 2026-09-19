@@ -5,13 +5,17 @@
     pkgs.mousepad
   ];
 
-  dconf.settings = {
-    "org/xfce/mousepad/preferences/view" = {
-      "word-wrap" = true;
-    };
+  xdg.configFile."Mousepad/settings.conf" = {
+    force = true;
 
-    "org/xfce/mousepad/preferences/window" = {
-      "menubar-visible" = false;
-    };
+    text = ''
+      [org/xfce/mousepad/preferences/view]
+      word-wrap=true
+      show-line-numbers=true
+      color-scheme='kate'
+
+      [org/xfce/mousepad/preferences/window]
+      menubar-visible=false
+    '';
   };
 }
