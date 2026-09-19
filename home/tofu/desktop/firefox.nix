@@ -18,6 +18,17 @@
     };
 
     policies = {
+      Extensions =
+        let
+          moz = short: "https://addons.mozilla.org/firefox/downloads/latest/${short}/latest.xpi";
+        in
+        {
+          Install = [
+            (moz "ublock-origin")
+            (moz "bitwarden-password-manager")
+          ];
+        };
+
       Homepage = {
         StartPage = "previous-session";
       };
