@@ -14,12 +14,4 @@
       "menubar-visible" = false;
     };
   };
-
-  xdg.mimeApps = {
-    enable = true;
-
-    defaultApplicationPackages = [
-      pkgs.mousepad
-    ];
-  };
 }
