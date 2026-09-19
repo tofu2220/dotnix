@@ -3,8 +3,6 @@
     enable = true;
 
     profiles.default = {
-      isDefault = true;
-
       settings = {
         # Show Compact mode in Customize Toolbar
         "browser.compactmode.show" = true;
@@ -50,6 +48,8 @@
         Enabled = true;
         ProviderURL = "https://mozilla.cloudflare-dns.com/dns-query";
       };
+
+      DisableFormHistory = true;
 
       OfferToSaveLogins = false;
       AutofillCreditCardEnabled = false;
