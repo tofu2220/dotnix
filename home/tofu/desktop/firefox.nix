@@ -14,6 +14,16 @@
 
         # Disable the "Support Firefox" checkbox in Firefox Home
         "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false;
+
+        # Disable search suggestions
+        "browser.urlbar.suggest.searches" = false;
+        "browser.search.suggest.enabled" = false;
+        "browser.urlbar.suggest.trending" = false;
+        "browser.urlbar.showSearchSuggestionsFirst" = false;
+        "browser.urlbar.suggest.history" = false;
+        "browser.urlbar.suggest.topsites" = false;
+        "browser.urlbar.suggest.recentsearches" = false;
+        "browser.urlbar.suggest.engines" = false;
       };
     };
 
@@ -29,62 +39,11 @@
           ];
         };
 
-      Homepage = {
-        StartPage = "previous-session";
-      };
+      Homepage.StartPage = "previous-session";
 
       FirefoxHome = {
         SponsoredTopSites = false;
         SponsoredStories = false;
-      };
-
-      Preferences = {
-        # Show search suggestions
-        "browser.urlbar.suggest.searches" = {
-          Value = false;
-          Status = "default";
-        };
-
-        "browser.search.suggest.enabled" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Trending search suggestions
-        "browser.urlbar.suggest.trending" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Show search suggestions before browsing history
-        "browser.urlbar.showSearchSuggestionsFirst" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Address Bar: Browsing history
-        "browser.urlbar.suggest.history" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Address Bar: Shortcuts
-        "browser.urlbar.suggest.topsites" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Address Bar: Recent searches
-        "browser.urlbar.suggest.recentsearches" = {
-          Value = false;
-          Status = "default";
-        };
-
-        # Address Bar: Suggest search engines to use
-        "browser.urlbar.suggest.engines" = {
-          Value = false;
-          Status = "default";
-        };
       };
 
       DNSOverHTTPS = {
@@ -96,20 +55,11 @@
       AutofillCreditCardEnabled = false;
       AutofillAddressEnabled = false;
 
-      AIControls = {
-        Default = {
-          Value = "blocked";
-        };
-      };
+      AIControls.Default.Value = "blocked";
 
       Permissions = {
-        Location = {
-          BlockNewRequests = true;
-        };
-
-        Notifications = {
-          BlockNewRequests = true;
-        };
+        Location.BlockNewRequests = true;
+        # Notifications.BlockNewRequests = true;
       };
 
       DisableTelemetry = true;
