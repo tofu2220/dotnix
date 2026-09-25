@@ -1,0 +1,42 @@
+layout {
+    gaps 16
+    center-focused-column "never"
+    always-center-single-column
+    background-color "#000000"
+
+    focus-ring {
+        on
+        width 2
+        active-color "#1e66f5ff"
+        inactive-color "#bcc0cc"
+        urgent-color "#d20f39"
+    }
+
+    preset-column-widths {
+        proportion 0.9
+        proportion 0.5
+    }
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+}
+
+window-rule {
+    match app-id=r#"^dev\.zed\.Zed$"#
+    default-column-width { proportion 0.9; }
+    default-window-height { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="^nwg-displays$"
+    default-column-width { proportion 0.9; }
+    default-window-height { proportion 1.0; }
+}
+
+window-rule {
+    match app-id="^foot$"
+    match is-floating=false
+    tiled-state true
+}

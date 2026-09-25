@@ -1,0 +1,9 @@
+gestures {
+    hot-corners {
+        off
+    }
+}
+
+binds {
+    Mod+T { toggle-overview; }
+}

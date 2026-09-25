@@ -1,0 +1,11 @@
+spawn-at-startup "mako"
+
+spawn-at-startup "waybar"
+
+spawn-at-startup "fcitx5"
+
+spawn-at-startup "swayidle" "-w" "timeout" "600" "swaylock -f -c 1e1e2e" "timeout" "601" "niri msg action power-off-monitors" "before-sleep" "swaylock -f -c 1e1e2e"
+
+hotkey-overlay {
+    skip-at-startup
+}

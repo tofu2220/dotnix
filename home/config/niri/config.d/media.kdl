@@ -1,0 +1,28 @@
+binds {
+    // Volume
+    XF86AudioRaiseVolume allow-when-locked=true {
+        spawn "pamixer" "-u" "-i" "2";
+    }
+
+    XF86AudioLowerVolume allow-when-locked=true {
+        spawn "pamixer" "-u" "-d" "2";
+    }
+
+    XF86AudioMute allow-when-locked=true {
+        spawn "pamixer" "--toggle-mute";
+    }
+
+    // Microphone
+    XF86AudioMicMute allow-when-locked=true {
+        spawn "pamixer" "--default-source" "--toggle-mute";
+    }
+
+    // Backlight
+    XF86MonBrightnessUp allow-when-locked=true {
+        spawn "brightnessctl" "-c" "backlight" "set" "+5%";
+    }
+
+    XF86MonBrightnessDown allow-when-locked=true {
+        spawn "brightnessctl" "-c" "backlight" "set" "5%-";
+    }
+}

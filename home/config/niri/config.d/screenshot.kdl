@@ -1,0 +1,4 @@
+binds {
+    Print { screenshot; }
+    Ctrl+Print { screenshot-window; }
+}

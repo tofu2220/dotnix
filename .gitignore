@@ -1,0 +1,58 @@
+# Images and vector assets
+*.[Pp][Nn][Gg]
+*.[Jj][Pp][Gg]
+*.[Jj][Pp][Ee][Gg]
+*.[Gg][Ii][Ff]
+*.[Ww][Ee][Bb][Pp]
+*.[Aa][Vv][Ii][Ff]
+*.[Bb][Mm][Pp]
+*.[Tt][Ii][Ff]
+*.[Tt][Ii][Ff][Ff]
+*.[Ii][Cc][Oo]
+*.[Hh][Ee][Ii][Cc]
+*.[Ss][Vv][Gg]
+
+# Audio and video
+*.[Mm][Pp]3
+*.[Ww][Aa][Vv]
+*.[Ff][Ll][Aa][Cc]
+*.[Oo][Gg][Gg]
+*.[Mm]4[Aa]
+*.[Aa][Aa][Cc]
+*.[Mm][Pp]4
+*.[Ww][Ee][Bb][Mm]
+*.[Mm][Kk][Vv]
+*.[Mm][Oo][Vv]
+*.[Aa][Vv][Ii]
+
+# Fonts
+*.[Tt][Tt][Ff]
+*.[Oo][Tt][Ff]
+*.[Ww][Oo][Ff]
+*.[Ww][Oo][Ff]2
+
+# Archives and VM/disk images
+*.[Zz][Ii][Pp]
+*.[Rr][Aa][Rr]
+*.7z
+*.tar
+*.tar.gz
+*.tar.xz
+*.tar.zst
+*.[Ii][Ss][Oo]
+*.qcow2
+*.vdi
+*.vmdk
+
+# Backups, editor files, and local build output
+*.bak
+*.backup
+*~
+*.swp
+*.swo
+/.direnv/
+/result
+/result-*
+
+# Local reference snapshots
+/ref-arch/

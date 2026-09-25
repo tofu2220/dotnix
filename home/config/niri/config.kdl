@@ -1,0 +1,11 @@
+include "config.d/app.kdl"
+include "config.d/autostart.kdl"
+include "config.d/gestures.kdl"
+include "config.d/focus.kdl"
+include "config.d/input.kdl"
+include "config.d/layout.kdl"
+include "config.d/media.kdl"
+include "config.d/screenshot.kdl"
+include "config.d/workspace.kdl"
+
+include optional=true "monitor.kdl"
