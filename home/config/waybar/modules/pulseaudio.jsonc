@@ -1,0 +1,10 @@
+{
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "],
+    },
+    "on-click": "pamixer --toggle-mute",
+  },
+}

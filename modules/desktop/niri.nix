@@ -7,5 +7,6 @@
     useNautilus = true;
   };
 
+  services.blueman.enable = true;
   security.soteria.enable = true;
 }
