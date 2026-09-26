@@ -1,0 +1,30 @@
+window {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0%; /* Hide default icons */
+    background-color: #2e3440;
+    color: #eceff4;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* Mouse hover state */
+button:hover {
+    background-color: #4c566a;
+}
+
+/* Keyboard-selected / focused state */
+button:focus {
+    background-color: #5e81ac;
+    outline: none;
+}
+
+/* Button is both focused and hovered */
+button:focus:hover {
+    background-color: #81a1c1;
+}
