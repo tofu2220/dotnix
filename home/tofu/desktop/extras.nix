@@ -12,6 +12,6 @@
     wl-clipboard
 
     # Text Editor
-    gnome-text-editor
+    mousepad
   ];
 }
