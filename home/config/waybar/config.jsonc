@@ -5,15 +5,23 @@
   "spacing": 0,
   "modules-left": ["niri/workspaces", "cpu"],
   "modules-center": ["clock"],
-  "modules-right": ["bluetooth", "network", "pulseaudio", "backlight", "battery"],
+  "modules-right": [
+    "tray",
+    "bluetooth",
+    "network",
+    "pulseaudio",
+    "backlight",
+    "battery",
+  ],
   "include": [
-    "modules/bluetooth.jsonc",
     "modules/workspaces.jsonc",
     "modules/cpu.jsonc",
     "modules/clock.jsonc",
+    "modules/tray.jsonc",
+    "modules/bluetooth.jsonc",
     "modules/network.jsonc",
     "modules/pulseaudio.jsonc",
     "modules/backlight.jsonc",
-    "modules/battery.jsonc"
-  ]
+    "modules/battery.jsonc",
+  ],
 }

@@ -15,6 +15,11 @@
     microfetch
     htop
 
+    # Networking and DNS tools
+    dnsutils
+    openssl
+    tcpdump
+
     # AI coding assistant.
     unstable.codex
   ];
