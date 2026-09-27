@@ -16,4 +16,6 @@ input {
         // dwt
         // dwtp
     }
+
+    focus-follows-mouse
 }
