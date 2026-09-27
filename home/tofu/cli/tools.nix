@@ -21,6 +21,6 @@
     tcpdump
 
     # AI coding assistant.
-    unstable.codex
+    unstable.opencode
   ];
 }
