@@ -6,6 +6,9 @@
     nixd
     nixfmt
 
+    # Nodejs
+    nodejs
+
     # Search and data tools.
     ripgrep
     jq
