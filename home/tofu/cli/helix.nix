@@ -5,7 +5,7 @@
     enable = true;
 
     settings = {
-      theme = "gruvbox";
+      theme = "catppuccin_mocha";
 
       editor.cursor-shape = {
         normal = "block";
