@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    opencode-nix.url = "github:dominicnunez/opencode-nix";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     home-manager = {
@@ -16,6 +17,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      opencode-nix,
       ...
     }:
     let
@@ -28,7 +30,12 @@
           inherit system;
 
           modules = [
-            { nixpkgs.overlays = [ unstableOverlay ]; }
+            {
+              nixpkgs.overlays = [
+                unstableOverlay
+                opencode-nix.overlays.default
+              ];
+            }
             host
           ];
 
