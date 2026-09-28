@@ -4,6 +4,8 @@
 
     profiles.default = {
       settings = {
+        "layout.css.prefers-color-scheme.content-override" = 1; # Light
+
         # Show Compact mode in Customize Toolbar
         "browser.compactmode.show" = true;
 

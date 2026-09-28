@@ -1,5 +1,6 @@
 binds {
     Mod+R { switch-preset-column-width; }
+    Mod+F { fullscreen-window; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down { focus-workspace-down; }

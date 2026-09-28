@@ -13,6 +13,7 @@
     pamixer
     brightnessctl
     nwg-displays
+    wl-mirror
     xwayland-satellite
     swaylock
     swayidle
