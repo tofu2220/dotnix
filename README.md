@@ -12,4 +12,8 @@ sudo nixos-rebuild boot --flake .#dell
 # ThinkPad T14
 ./scripts/genhw.sh t14
 sudo nixos-rebuild boot --flake .#t14
+
+# ThinkPad E14
+./scripts/genhw.sh t14
+sudo nixos-rebuild boot --flake .#e14
 ```
