@@ -7,7 +7,7 @@
     nixfmt
 
     # Nodejs
-    nodejs
+    nodejs # For zed less bloat
 
     # Search and data tools.
     ripgrep

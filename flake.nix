@@ -49,6 +49,7 @@
       nixosConfigurations = {
         dell = mkHost ./hosts/dell;
         t14 = mkHost ./hosts/t14;
+        e14 = mkHost ./hosts/e14;
       };
     };
 }
