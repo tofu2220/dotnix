@@ -4,7 +4,7 @@
   "margin-bottom": -10,
   "spacing": 0,
   "modules-left": ["niri/workspaces", "cpu"],
-  "modules-center": ["clock"],
+  "modules-center": ["clock", "custom/notification"],
   "modules-right": [
     "tray",
     "bluetooth",
@@ -17,6 +17,7 @@
     "modules/workspaces.jsonc",
     "modules/cpu.jsonc",
     "modules/clock.jsonc",
+    "modules/notification.jsonc",
     "modules/tray.jsonc",
     "modules/bluetooth.jsonc",
     "modules/network.jsonc",
