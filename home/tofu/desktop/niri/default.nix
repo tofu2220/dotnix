@@ -17,7 +17,7 @@
   imports = [
     ./fcitx5.nix
     ./firefox.nix
-    ./foot.nix
+    ./alacritty.nix
     ./fuzzel.nix
     ./mpv.nix
     ./nautilus.nix

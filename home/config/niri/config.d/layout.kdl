@@ -34,9 +34,3 @@ window-rule {
     default-column-width { proportion 0.9; }
     default-window-height { proportion 1.0; }
 }
-
-window-rule {
-    match app-id="^foot$"
-    match is-floating=false
-    tiled-state true
-}

@@ -5,6 +5,6 @@
     "format-disconnected": "󰤠 ",
     "interval": 5,
     "tooltip-format": "{essid} ({signalStrength}%)",
-    "on-click": "foot -e nmtui",
+    "on-click": "alacritty -e nmtui",
   },
 }

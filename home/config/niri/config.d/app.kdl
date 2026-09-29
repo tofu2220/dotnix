@@ -1,13 +1,13 @@
 environment {
     BROWSER "firefox"
-    TERMINAL "foot"
+    TERMINAL "alacritty"
     LAUNCHER "fuzzel"
 }
 
 binds {
     Mod+B { spawn-sh "$BROWSER"; }
     Mod+Return { spawn-sh "$TERMINAL"; }
-    Mod+D { spawn "$LAUNCHER"; }
+    Mod+D { spawn-sh "$LAUNCHER"; }
     Mod+Q { close-window; }
     Mod+Shift+E { spawn "wlogout"; }
 }
