@@ -11,7 +11,6 @@
 
     starship = {
       enable = true;
-      enableFishIntegration = true;
       presets = [ "nerd-font-symbols" ];
 
       settings = {
@@ -21,13 +20,11 @@
 
     direnv = {
       enable = true;
-      enableFishIntegration = true;
       nix-direnv.enable = true;
     };
 
     zoxide = {
       enable = true;
-      enableFishIntegration = true;
     };
   };
 }
