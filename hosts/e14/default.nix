@@ -6,7 +6,7 @@
     ./hardware-configuration.nix
   ];
 
-  networking.hostName = "nixos-e14";
+  networking.hostName = "VSF-PF64LR0C-L";
   # security.pki.certificateFiles = [
   #   ./certs/company-ca.crt
   # ]; # Placeholder, wait for ca cert
