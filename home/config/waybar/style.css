@@ -13,6 +13,7 @@
 }
 
 #workspaces,
+#memory,
 #cpu,
 #clock,
 #custom-notification,
@@ -33,6 +34,7 @@
 }
 
 #workspaces,
+#memory,
 #cpu,
 #clock,
 #custom-notification,
@@ -66,6 +68,7 @@
 }
 
 #workspaces button:hover,
+#memory:hover,
 #cpu:hover,
 #custom-notification:hover,
 #tray:hover,
@@ -84,6 +87,20 @@
 #clock {
     color: #99d1db;
     box-shadow: 0 1px 3px rgba(153, 209, 219, 0.2);
+}
+
+#memory {
+    color: #99d1db;
+    margin-right: 5px;
+    box-shadow: 0 1px 3px rgba(153, 209, 219, 0.2);
+}
+
+#memory.warning {
+    color: #e5c890;
+}
+
+#memory.critical {
+    color: #e78284;
 }
 
 #clock:hover {

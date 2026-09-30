@@ -3,7 +3,7 @@
   "position": "top",
   "margin-bottom": -10,
   "spacing": 0,
-  "modules-left": ["niri/workspaces", "cpu"],
+  "modules-left": ["niri/workspaces", "memory", "cpu"],
   "modules-center": ["clock", "custom/notification"],
   "modules-right": [
     "tray",
@@ -15,6 +15,7 @@
   ],
   "include": [
     "modules/workspaces.jsonc",
+    "modules/memory.jsonc",
     "modules/cpu.jsonc",
     "modules/clock.jsonc",
     "modules/notification.jsonc",
