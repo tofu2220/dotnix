@@ -7,7 +7,7 @@
     timeouts = [
       {
         timeout = 600;
-        command = "${pkgs.swaylock}/bin/swaylock -f -c 1e1e2e";
+        command = "${pkgs.swaylock}/bin/swaylock -f";
       }
       {
         timeout = 601;
@@ -15,6 +15,6 @@
       }
     ];
 
-    events."before-sleep" = "${pkgs.swaylock}/bin/swaylock -f -c 1e1e2e";
+    events."before-sleep" = "${pkgs.swaylock}/bin/swaylock -f";
   };
 }
