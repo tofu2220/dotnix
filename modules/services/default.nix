@@ -1,8 +1,9 @@
 { ... }:
 {
   imports = [
-    ./auto-cpufreq.nix
+    ./autocpu.nix
     ./podman.nix
     ./ssh.nix
+    ./upower.nix
   ];
 }
