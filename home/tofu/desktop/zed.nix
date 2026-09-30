@@ -12,6 +12,15 @@
       base_keymap = "VSCode";
       show_edit_predictions = false;
 
+      languages = {
+        Nix = {
+          language_servers = [
+            "nixd"
+            "!nil"
+          ];
+        };
+      };
+
       agent_ui_font_family = "DejaVu Sans";
 
       terminal = {
