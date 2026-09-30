@@ -27,7 +27,6 @@
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; [
-    font-awesome_6
     noto-fonts-color-emoji
     nerd-fonts.jetbrains-mono
   ];

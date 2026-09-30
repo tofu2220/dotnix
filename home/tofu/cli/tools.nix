@@ -17,6 +17,7 @@
     lm_sensors
     microfetch
     htop
+    upower
 
     # Networking and DNS tools
     dnsutils
