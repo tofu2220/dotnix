@@ -56,3 +56,6 @@
 
 # Local reference snapshots
 /ref-arch/
+
+# CA certs
+hosts/e14/certs/company-ca.crt
