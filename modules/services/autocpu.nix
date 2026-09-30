@@ -1,11 +1,5 @@
 {
-  nixpkgs.overlays = [
-    (final: _prev: {
-      auto-cpufreq = final.unstable.auto-cpufreq;
-    })
-  ];
-
-  services.auto-cpufreq = {
+  programs.auto-cpufreq = {
     enable = true;
 
     settings = {
@@ -21,6 +15,10 @@
         platform_profile = "low-power";
         enforce_platform_profile = true;
         scaling_max_freq = 2000000;
+
+        enable_thresholds = true;
+        start_threshold = 70;
+        stop_threshold = 80;
       };
     };
   };

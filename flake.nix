@@ -3,9 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
-    opencode-nix.url = "github:dominicnunez/opencode-nix";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-
+    opencode-nix.url = "github:dominicnunez/opencode-nix";
+    auto-cpufreq = {
+      url = "github:AdnanHodzic/auto-cpufreq";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -18,6 +21,7 @@
       nixpkgs-unstable,
       home-manager,
       opencode-nix,
+      auto-cpufreq,
       ...
     }:
     let
@@ -30,6 +34,7 @@
           inherit system;
 
           modules = [
+            auto-cpufreq.nixosModules.default
             {
               nixpkgs.overlays = [
                 unstableOverlay
