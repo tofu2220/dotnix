@@ -6,23 +6,11 @@
       settings = {
         "layout.css.prefers-color-scheme.content-override" = 1; # Light
 
-        # Show Compact mode in Customize Toolbar
-        "browser.compactmode.show" = true;
-
-        # 0 = Normal, 1 = Compact, 2 = Touch
-        "browser.uidensity" = 1;
-
-        # Enable spell checking
-        "layout.spellcheckDefault" = 1;
-
         # Disable the "Support Firefox" checkbox in Firefox Home
         "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false;
 
         # Disable search suggestions
-        "browser.urlbar.suggest.searches" = false;
-        "browser.search.suggest.enabled" = false;
         "browser.urlbar.suggest.trending" = false;
-        "browser.urlbar.showSearchSuggestionsFirst" = false;
         "browser.urlbar.suggest.history" = false;
         "browser.urlbar.suggest.topsites" = false;
         "browser.urlbar.suggest.recentsearches" = false;
@@ -44,6 +32,8 @@
         };
 
       Homepage.StartPage = "previous-session";
+
+      SearchSuggestEnabled = false;
 
       FirefoxHome = {
         SponsoredTopSites = false;
