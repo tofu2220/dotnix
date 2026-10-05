@@ -59,3 +59,5 @@
 
 # CA certs
 hosts/e14/certs/company-ca.crt
+.agents/skills/
+skills-lock.json
