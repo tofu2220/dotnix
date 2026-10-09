@@ -15,9 +15,10 @@
   };
 
   imports = [
+    ./alacritty.nix
+    ./bluetooth.nix
     ./fcitx5.nix
     ./firefox.nix
-    ./alacritty.nix
     ./fuzzel.nix
     ./mpv.nix
     ./nautilus.nix

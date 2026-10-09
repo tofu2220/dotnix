@@ -10,9 +10,6 @@
     libimobiledevice
   ];
 
-  hardware.bluetooth.enable = true;
-  hardware.bluetooth.powerOnBoot = false;
-
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
 

@@ -8,9 +8,5 @@
   };
 
   security.soteria.enable = true;
-  services.blueman = {
-    enable = true;
-    # withApplet = false; # Wait for newest stable version have this line
-  };
   security.pam.services.swaylock = { };
 }
