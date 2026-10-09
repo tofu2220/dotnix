@@ -9,5 +9,5 @@ binds {
     Mod+Return { spawn-sh "$TERMINAL"; }
     Mod+D { spawn-sh "$LAUNCHER"; }
     Mod+Q { close-window; }
-    Mod+Shift+E { spawn "wleave"; }
+    Mod+Shift+E { spawn "wlogout"; }
 }

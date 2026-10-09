@@ -26,6 +26,6 @@
     ./swaylock.nix
     ./swaync.nix
     ./waybar.nix
-    ./wleave.nix
+    ./wlogout.nix
   ];
 }
