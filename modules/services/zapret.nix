@@ -1,7 +1,10 @@
+{ pkgs, ... }:
+
 # Change to zapret2 when I switch to nixos 26.11
 {
   services.zapret = {
     enable = true;
+    package = pkgs.unstable.zapret;
 
     params = [
       "--dpi-desync=fake,disorder2"
