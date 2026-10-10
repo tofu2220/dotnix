@@ -16,7 +16,6 @@
 
   imports = [
     ./alacritty.nix
-    ./bluetooth.nix
     ./fcitx5.nix
     ./firefox.nix
     ./fuzzel.nix
