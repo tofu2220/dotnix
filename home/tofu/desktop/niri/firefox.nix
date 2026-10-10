@@ -5,6 +5,7 @@
     profiles.default = {
       settings = {
         "layout.css.prefers-color-scheme.content-override" = 1; # Light
+        "layout.spellcheckDefault" = 0;
 
         # Disable the "Support Firefox" checkbox in Firefox Home
         "browser.newtabpage.activity-stream.showSponsoredCheckboxes" = false;
@@ -27,7 +28,6 @@
           Install = [
             (moz "ublock-origin")
             (moz "bitwarden-password-manager")
-            (moz "vietnamese-dictionary")
           ];
         };
 
