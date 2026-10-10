@@ -6,5 +6,6 @@
     ./podman.nix
     ./ssh.nix
     ./upower.nix
+    ./zapret.nix
   ];
 }
