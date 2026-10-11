@@ -27,7 +27,7 @@
         {
           Install = [
             (moz "ublock-origin")
-            (moz "bitwarden-password-manager")
+            (moz "proton-pass")
           ];
         };
 
