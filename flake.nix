@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    zed.url = "github:zed-industries/zed";
     opencode-nix.url = "github:dominicnunez/opencode-nix";
     auto-cpufreq = {
       url = "github:AdnanHodzic/auto-cpufreq";
@@ -27,7 +28,7 @@
     let
       system = "x86_64-linux";
       unstableOverlay = import ./overlays/unstable.nix { inherit nixpkgs-unstable; };
-
+      opencodeOverlay = import ./overlays/opencode.nix { inherit opencode-nix; };
       mkHost =
         host:
         nixpkgs.lib.nixosSystem {
@@ -38,7 +39,7 @@
             {
               nixpkgs.overlays = [
                 unstableOverlay
-                opencode-nix.overlays.default
+                opencodeOverlay
               ];
             }
             host
