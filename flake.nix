@@ -4,7 +4,6 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    zed.url = "github:zed-industries/zed";
     opencode-nix.url = "github:dominicnunez/opencode-nix";
     auto-cpufreq = {
       url = "github:AdnanHodzic/auto-cpufreq";
