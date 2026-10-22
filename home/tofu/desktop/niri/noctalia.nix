@@ -34,6 +34,11 @@
         };
       };
 
+      control_center = {
+        # Keep the native Bluetooth tab available in Control Center.
+        hidden_tabs = [ ];
+      };
+
       bar.default = {
         position = "top";
         enabled = true;
@@ -79,6 +84,7 @@
           "control-center"
           "tray"
           "network"
+          "bluetooth"
           "volume"
           "battery"
           "brightness"
@@ -148,6 +154,11 @@
 
         network = {
           type = "network";
+          show_label = false;
+        };
+
+        bluetooth = {
+          type = "bluetooth";
           show_label = false;
         };
 

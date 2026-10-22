@@ -95,6 +95,7 @@ in
       && s.theme.shell_mode == "dark"
       && s.theme.source == "builtin"
       && s.theme.builtin == "Catppuccin"
+      && s.control_center.hidden_tabs == [ ]
       && s.bar.default.enabled
       && s.bar.default.position == "top"
       && s.bar.default.auto_hide == false
@@ -134,6 +135,7 @@ in
           "control-center"
           "tray"
           "network"
+          "bluetooth"
           "volume"
           "battery"
           "brightness"
@@ -180,6 +182,8 @@ in
       && s.widget.tray.match_adjacent_spacing
       && s.widget.network.type == "network"
       && !s.widget.network.show_label
+      && s.widget.bluetooth.type == "bluetooth"
+      && !s.widget.bluetooth.show_label
       && s.widget.battery.display_mode == "glyph"
       && s.widget.battery.show_label
       && !s.widget.volume.show_label
@@ -217,6 +221,8 @@ in
       c:
       c.networking.networkmanager.enable
       && c.hardware.bluetooth.enable
+      && !c.services.blueman.enable
+      && !c.hardware.bluetooth.powerOnBoot
       && c.services.upower.enable
       && c.programs.auto-cpufreq.enable
       && !c.services.power-profiles-daemon.enable

@@ -36,6 +36,8 @@ The shared Niri session uses Noctalia **v5.3.0** for the bar, launcher, notifica
 
 `Mod+L` remains Niri's focus-column-right binding. Noctalia-launched applications run as transient systemd user services so they can survive a Noctalia service restart.
 
+Bluetooth is managed from the native Bluetooth tab in Noctalia Control Center (`Mod+S`): power, discovery, pairing/unpairing, and connecting/disconnecting are provided by Noctalia's BlueZ integration. Noctalia is the UI and BlueZ remains the system backend (`hardware.bluetooth.enable = true`); Bluetooth is not powered on automatically at boot. Pairing requests that need a PIN, passkey, or confirmation are handled by Noctalia's BlueZ agent. This replaces Blueman; it does not change the BlueZ backend or pairing setup. Hardware behavior has not been validated by configuration evaluation/build checks. The base configuration leaves the Bluetooth tab visible, but GUI overrides in `~/.local/state/noctalia/settings.toml` take precedence and may hide it; manage such overrides through Noctalia Settings, not by editing or deleting state files as part of this change.
+
 ### Configuration and GUI overrides
 
 Home Manager generates the read-only base configuration at `~/.config/noctalia/config.toml`. Noctalia stores GUI overrides in the writable `~/.local/state/noctalia/settings.toml`; those overrides take precedence over the Home Manager base. A NixOS generation rollback does **not** roll back this user state. Preserve or back up the Noctalia state before downgrading Noctalia, and restore it separately if needed; do not edit the Nix-managed TOML or clear the state directory to troubleshoot.
