@@ -133,12 +133,12 @@ in
         s.bar.default.end == [
           "control-center"
           "tray"
-          "notifications"
-          "battery"
+          "network"
           "volume"
+          "battery"
           "brightness"
+          "notifications"
           "clock"
-          "settings"
           "session"
         ]
       && s.widget.cpu.type == "sysmon"
@@ -178,6 +178,8 @@ in
       && s.widget.workspaces.inactive_pill_size == 1.0
       && s.widget.tray.drawer
       && s.widget.tray.match_adjacent_spacing
+      && s.widget.network.type == "network"
+      && !s.widget.network.show_label
       && s.widget.battery.display_mode == "glyph"
       && s.widget.battery.show_label
       && !s.widget.volume.show_label

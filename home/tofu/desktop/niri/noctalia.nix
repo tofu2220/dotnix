@@ -78,12 +78,12 @@
         end = [
           "control-center"
           "tray"
-          "notifications"
-          "battery"
+          "network"
           "volume"
+          "battery"
           "brightness"
+          "notifications"
           "clock"
-          "settings"
           "session"
         ];
       };
@@ -144,6 +144,11 @@
           capsule = true;
           capsule_radius = 20.0;
           capsule_padding = 5.0;
+        };
+
+        network = {
+          type = "network";
+          show_label = false;
         };
 
         tray = {
