@@ -91,30 +91,107 @@ in
       && !s.shell.niri_overview_type_to_launch_enabled
       && !s.theme.templates.enable_builtin_templates
       && !s.theme.templates.enable_community_templates
-      && s.theme.mode == "light"
+      && s.theme.mode == "dark"
+      && s.theme.shell_mode == "dark"
       && s.theme.source == "builtin"
       && s.theme.builtin == "Catppuccin"
-      && s.bar.main.position == "top"
-      && s.bar.main.reserve_space
-      && !s.bar.main.compositor_blur
-      && s.bar.main.margin_ends == 0
-      && s.bar.main.start == [ "workspaces" ]
+      && s.bar.default.enabled
+      && s.bar.default.position == "top"
+      && s.bar.default.auto_hide == false
+      && s.bar.default.reserve_space
+      && s.bar.default.layer == "top"
+      && s.bar.default.thickness == 26
+      && s.bar.default.margin_edge == 0
+      && s.bar.default.margin_ends == 0
+      && s.bar.default.margin_opposite_edge == 0
+      && s.bar.default.padding == 6
+      && s.bar.default.widget_spacing == 8
+      && s.bar.default.background_opacity == 0.97
+      && !s.bar.default.compositor_blur
+      && s.bar.default.border_width == 0.0
+      && !s.bar.default.shadow
+      && !s.bar.default.concave_edge_corners
+      && s.bar.default.radius == 0
+      && s.bar.default.radius_top_left == 0
+      && s.bar.default.radius_top_right == 0
+      && s.bar.default.radius_bottom_left == 0
+      && s.bar.default.radius_bottom_right == 0
+      && s.bar.default.scale == 0.94
+      && s.bar.default.font_scale == 1.0
+      && s.bar.default.font_weight == 600
+      && !(s.bar.default ? color)
+      && !s.bar.default.capsule
       &&
-        s.bar.main.center == [
-          "clock"
-          "notifications"
+        s.bar.default.start == [
+          "cpu"
+          "temperature"
+          "ram"
+          "media"
         ]
+      && s.bar.default.center == [ "workspaces" ]
       &&
-        s.bar.main.end == [
+        s.bar.default.end == [
+          "control-center"
           "tray"
-          "bluetooth"
-          "network"
+          "notifications"
+          "battery"
           "volume"
           "brightness"
-          "battery"
-          "control-center"
+          "clock"
+          "settings"
           "session"
         ]
+      && s.widget.cpu.type == "sysmon"
+      && s.widget.cpu.stat == "cpu_usage"
+      && s.widget.cpu.visualization == "none"
+      && s.widget.cpu.show_glyph
+      && s.widget.cpu.show_value
+      && s.widget.temperature.type == "sysmon"
+      && s.widget.temperature.stat == "cpu_temp"
+      && s.widget.temperature.visualization == "none"
+      && s.widget.temperature.show_glyph
+      && s.widget.temperature.show_value
+      && s.widget.ram.type == "sysmon"
+      && s.widget.ram.stat == "ram_used"
+      && s.widget.ram.visualization == "none"
+      && s.widget.ram.show_glyph
+      && s.widget.ram.show_value
+      && s.widget.media.type == "media"
+      && s.widget.media.hide_artist
+      && !s.widget.media.hide_album_art
+      && s.widget.media.hide_when_no_media
+      && s.widget.media.art_size == 16
+      && s.widget.media.min_length == 70
+      && s.widget.media.max_length == 165
+      && s.widget.media.title_scroll == "none"
+      && s.widget.workspaces.type == "workspaces"
+      && s.widget.workspaces.style == "regular"
+      && !s.widget.workspaces.show_labels
+      && !s.widget.workspaces.show_icons
+      && !s.widget.workspaces.hide_when_empty
+      && !(s.widget.workspaces ? focused_color)
+      && !(s.widget.workspaces ? occupied_color)
+      && !(s.widget.workspaces ? empty_color)
+      && !s.widget.workspaces.change_color_on_hover
+      && s.widget.workspaces.pill_scale == 0.55
+      && s.widget.workspaces.active_pill_size == 2.8
+      && s.widget.workspaces.inactive_pill_size == 1.0
+      && s.widget.tray.drawer
+      && s.widget.tray.match_adjacent_spacing
+      && s.widget.battery.display_mode == "glyph"
+      && s.widget.battery.show_label
+      && !s.widget.volume.show_label
+      && !s.widget.brightness.show_label
+      && s.widget.clock.format == "{:%H:%M}"
+      && s.osd.position == "top_right"
+      && s.osd.orientation == "horizontal"
+      && s.osd.hide_delay_ms == 1500
+      && s.osd.scale == 0.90
+      && s.osd.background_opacity == 0.97
+      && !s.osd.border
+      && s.osd.offset_x == 18
+      && s.osd.offset_y == 40
+      && builtins.attrNames s.bar == [ "default" ]
       && !s.wallpaper.enabled
       && !s.backdrop.enabled
       && !s.dock.enabled

@@ -42,6 +42,8 @@ Home Manager generates the read-only base configuration at `~/.config/noctalia/c
 
 Clipboard history is disabled. The theme setting here does not rewrite GTK, Qt, or application theme files, and the login greeter remains `greetd` with `tuigreet`.
 
+The bar's volume and brightness widgets render their glyphs by default in Noctalia v5.3.0; their config schema has no `show_glyph` option, so only `show_label = false` is configured for the requested glyph-only appearance.
+
 `noctalia config validate` (without a path) validates the merged active config, including state-directory overrides. Supplying a TOML file path validates only that file and does not check the complete active stack. Validation does not establish that a running shell has reloaded a change. `noctalia config export merged` prints merged configuration; treat its output as private because user settings can contain personal data.
 
 ### Displays, screenshots, and limitations
