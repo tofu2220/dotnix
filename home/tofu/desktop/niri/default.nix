@@ -2,8 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    pamixer
-    brightnessctl
     nwg-displays
     wl-mirror
     xwayland-satellite
