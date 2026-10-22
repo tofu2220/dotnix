@@ -12,6 +12,7 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    noctalia.url = "github:noctalia-dev/noctalia/v5.3.0";
   };
 
   outputs =
@@ -19,6 +20,7 @@
       nixpkgs,
       nixpkgs-unstable,
       home-manager,
+      noctalia,
       auto-cpufreq,
       ...
     }:
@@ -40,7 +42,7 @@
             host
           ];
 
-          specialArgs = { inherit home-manager; };
+          specialArgs = { inherit home-manager noctalia; };
         };
     in
     {

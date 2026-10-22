@@ -19,6 +19,13 @@ layout {
 }
 
 window-rule {
+    match app-id="dev.noctalia.Noctalia"
+    open-floating true
+    default-column-width { fixed 1080; }
+    default-window-height { fixed 920; }
+}
+
+window-rule {
     geometry-corner-radius 12
     clip-to-geometry true
 }

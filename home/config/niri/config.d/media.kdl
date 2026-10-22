@@ -1,28 +1,28 @@
 binds {
     // Volume
     XF86AudioRaiseVolume allow-when-locked=true {
-        spawn "pamixer" "-u" "-i" "2";
+        spawn "noctalia" "msg" "volume-up";
     }
 
     XF86AudioLowerVolume allow-when-locked=true {
-        spawn "pamixer" "-u" "-d" "2";
+        spawn "noctalia" "msg" "volume-down";
     }
 
     XF86AudioMute allow-when-locked=true {
-        spawn "pamixer" "--toggle-mute";
+        spawn "noctalia" "msg" "volume-mute";
     }
 
     // Microphone
     XF86AudioMicMute allow-when-locked=true {
-        spawn "pamixer" "--default-source" "--toggle-mute";
+        spawn "noctalia" "msg" "mic-mute";
     }
 
     // Backlight
     XF86MonBrightnessUp allow-when-locked=true {
-        spawn "brightnessctl" "-c" "backlight" "set" "+5%";
+        spawn "noctalia" "msg" "brightness-up";
     }
 
     XF86MonBrightnessDown allow-when-locked=true {
-        spawn "brightnessctl" "-c" "backlight" "set" "5%-";
+        spawn "noctalia" "msg" "brightness-down";
     }
 }

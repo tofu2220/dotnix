@@ -7,6 +7,7 @@
     useNautilus = true;
   };
 
-  security.soteria.enable = true;
-  security.pam.services.swaylock = { };
+  security.soteria.enable = false;
+  # NixOS's programs.wayland session module registers this PAM service by default.
+  security.pam.services.swaylock.enable = false;
 }

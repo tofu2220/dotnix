@@ -18,14 +18,9 @@
     ./alacritty.nix
     ./fcitx5.nix
     ./firefox.nix
-    ./fuzzel.nix
     ./mpv.nix
     ./nautilus.nix
-    ./swayidle.nix
+    ./noctalia.nix
     ./swayimg.nix
-    ./swaylock.nix
-    ./swaync.nix
-    ./waybar.nix
-    ./wlogout.nix
   ];
 }

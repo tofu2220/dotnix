@@ -1,13 +1,15 @@
 environment {
     BROWSER "firefox"
     TERMINAL "alacritty"
-    LAUNCHER "fuzzel"
 }
 
 binds {
     Mod+B { spawn-sh "$BROWSER"; }
     Mod+Return { spawn-sh "$TERMINAL"; }
-    Mod+D { spawn-sh "$LAUNCHER"; }
+    Mod+D { spawn "noctalia" "msg" "panel-toggle" "launcher"; }
     Mod+Q { close-window; }
-    Mod+Shift+E { spawn "wlogout"; }
+    Mod+Shift+E { spawn "noctalia" "msg" "panel-toggle" "session"; }
+    Mod+Escape repeat=false { spawn "noctalia" "msg" "session" "lock"; }
+    Mod+Comma repeat=false { spawn "noctalia" "msg" "settings-toggle"; }
+    Mod+S repeat=false { spawn "noctalia" "msg" "panel-toggle" "control-center"; }
 }

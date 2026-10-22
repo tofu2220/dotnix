@@ -1,4 +1,4 @@
-{ home-manager, pkgs, ... }:
+{ home-manager, noctalia, pkgs, ... }:
 
 {
   imports = [
@@ -20,6 +20,7 @@
   home-manager = {
     useGlobalPkgs = true;
     useUserPackages = true;
+    extraSpecialArgs = { inherit noctalia; };
     users.tofu = import ../home/tofu;
   };
 }
