@@ -194,7 +194,7 @@ in
       && s.osd.offset_x == 18
       && s.osd.offset_y == 40
       && builtins.attrNames s.bar == [ "default" ]
-      && !s.wallpaper.enabled
+      && s.wallpaper.enabled
       && !s.backdrop.enabled
       && !s.dock.enabled
       && !s.desktop_widgets.enabled

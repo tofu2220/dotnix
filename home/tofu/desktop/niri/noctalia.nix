@@ -190,7 +190,7 @@
         offset_y = 40;
       };
 
-      wallpaper.enabled = false;
+      wallpaper.enabled = true;
       backdrop.enabled = false;
       dock.enabled = false;
       desktop_widgets.enabled = false;
