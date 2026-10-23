@@ -20,6 +20,11 @@
         clipboard_enabled = false;
         telemetry_enabled = false;
         niri_overview_type_to_launch_enabled = false;
+        panel = {
+          open_near_click_control_center = true;
+          open_near_click_session = true;
+          open_near_click_wallpaper = true;
+        };
       };
 
       theme = {
