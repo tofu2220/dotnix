@@ -1,6 +1,8 @@
 binds {
     Mod+R { switch-preset-column-width; }
-    Mod+F { fullscreen-window; }
+    Mod+Shift+F repeat=false { fullscreen-window; }
+    Mod+M repeat=false { maximize-window-to-edges; }
+    Mod+F repeat=false { maximize-column; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down { focus-workspace-down; }
