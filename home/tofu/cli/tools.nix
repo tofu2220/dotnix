@@ -9,6 +9,10 @@
     # Nodejs
     nodejs # For zed less bloat
 
+    # Python development
+    python3
+    uv
+
     # Search and data tools.
     ripgrep
     jq
