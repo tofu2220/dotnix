@@ -12,6 +12,8 @@
     # Python development
     python3
     uv
+    ruff
+    basedpyright
 
     # Search and data tools.
     ripgrep
