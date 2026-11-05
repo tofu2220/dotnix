@@ -29,6 +29,7 @@
     openssl
     tcpdump
 
+    # Record, covert, stream audio & video
     ffmpeg
 
     # AI coding assistant.
