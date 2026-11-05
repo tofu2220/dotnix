@@ -11,7 +11,7 @@
 
     # Python development
     python3
-    uv
+    unstable.uv
     ruff
     basedpyright
 
