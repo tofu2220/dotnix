@@ -29,6 +29,8 @@
     openssl
     tcpdump
 
+    ffmpeg
+
     # AI coding assistant.
     unstable.opencode
   ];
